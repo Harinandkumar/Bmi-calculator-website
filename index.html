@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bmi calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">BMI Calc</div>
+      <div class="burger" onclick="toggleNav()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+      <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="page1.html">Calculator</a></li>
+          <li><a href="page1.html">About</a></li>
+      </ul>
+  </nav>
+    
+    <div class="container" id="Home">
+      <h1>Bmi calculator</h1>
+      <div class="input-height">
+        <label for="height">Height: </label>
+        <input type="number" placeholder="Enter  Height in cm" id="height" />
+      </div>
+
+      <div class="input-height">
+        <label for="height-weight">weight:</label>
+        <input type="number" id="weight" placeholder="Enter weight in kg" />
+      </div>
+
+      <div class="btn">
+        <button onclick="calculate()" id="btn">Calculate</button>
+      </div>
+
+      <div class="output">
+      <div id="Bmivalue">
+        <h3>Bmi value:</h3>
+        <span id="resultvalue"></span>
+      </div>
+      <div id="status">
+        <h3>Status:</h3>
+        <span id="result"></span>
+      </div>
+    </div>
+    </div>
+   
+
+
+    <footer>
+      <div class="footer-content">
+          <h2>Harinand Singh</h2>
+          <h5>Thank you for visiting my website.</h5>
+      </div>
+      <div class="footer-bottom">
+         <h5> &copy; 2024 Harinand Singh technology. All rights reserved.</h5>
+      </div>
+  </footer>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>

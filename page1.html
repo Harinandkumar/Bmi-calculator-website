@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding BMI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            max-width: 1000px;
+        }
+        .header {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .left-column {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .right-column {
+            flex: 1;
+        }
+        .info {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .info p {
+            margin: 10px 0;
+        }
+        .info p:first-child {
+            margin-top: 0;
+        }
+        .info p:last-child {
+            margin-bottom: 0;
+        }
+        .categories {
+            margin-bottom: 20px;
+        }
+        .categories h2 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .categories ul li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .container {
+
+                margin-top: 80px;
+                width: 90%;
+            }
+            .content {
+                flex-direction: column;
+            }
+            .left-column, .right-column {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Understanding BMI: Body Mass Index</h1>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <div class="info">
+                    <p>In the realm of health and fitness, <span class="highlight">Body Mass Index (BMI)</span> serves as a fundamental tool for assessing weight relative to height.</p>
+                    <p>BMI is calculated using a formula based on weight and height, providing a numeric value that categorizes individuals into different weight status classifications.</p>
+                </div>
+                <div class="categories">
+                    <h2>BMI Categories:</h2>
+                    <ul>
+                        <li><strong>Underweight:</strong> BMI less than 18.5</li>
+                        <li><strong>Normal weight:</strong> BMI 18.5 to 24.9</li>
+                        <li><strong>Overweight:</strong> BMI 25 to 29.9</li>
+                        <li><strong>Obese:</strong> BMI 30 or greater</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-column">
+                <img src="iStock-1321147829-1024x683.jpg" alt="BMI Illustration">
+            </div>
+        </div>
+        <div class="info">
+            <p>BMI provides a quick snapshot of an individual’s body composition, although it does not directly measure body fat.</p>
+            <p>Consulting with a healthcare provider is recommended for personalized advice based on BMI and other health indicators.</p>
+        </div>
+    </div>
+</body>
+</html>
