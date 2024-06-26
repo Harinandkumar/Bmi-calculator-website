@@ -13,16 +13,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 200vh;
         }
         .container {
-            padding: 20px;
+            padding: 10px;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            padding: 10px;
             width: 80%;
             max-width: 1000px;
+            
         }
         .header {
             text-align: center;
@@ -91,9 +92,144 @@
                 margin-bottom: 20px;
             }
         }
+
+
+
+        footer {
+    background-color: #333;
+    color: #151212;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: rgba(179, 230, 15, 0.634);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.footer-content h5{
+    margin: 5px 0;
+    font-size: 14px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer-bottom h5 {
+
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+@media (max-width: 600px) {
+    .footer-content h3 {
+        font-size: 18px;
+    }
+    
+    .footer-content p {
+        font-size: 12px;
+    }
+    
+    .footer-bottom {
+        font-size: 10px;
+    }
+}
+
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1512129c;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    padding: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+footer {
+    background-color: #333;
+    color: #151212;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: rgba(179, 230, 15, 0.634);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    
+}
+
     </style>
+
 </head>
 <body>
+    <nav>
+        <div class="logo">BMI Calc</div>
+        <div class="burger" onclick="toggleNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="page1.html">About</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <div class="header">
             <h1>Understanding BMI: Body Mass Index</h1>
@@ -123,5 +259,15 @@
             <p>Consulting with a healthcare provider is recommended for personalized advice based on BMI and other health indicators.</p>
         </div>
     </div>
+    <footer>
+        <div class="footer-content">
+            <h2>Harinand Singh</h2>
+            <h5>Thank you for visiting my website.</h5>
+        </div>
+        <div class="footer-bottom">
+           <h5> &copy; 2024 Harinand Singh technology. All rights reserved.</h5>
+        </div>
+    </footer>
+      
 </body>
 </html>
